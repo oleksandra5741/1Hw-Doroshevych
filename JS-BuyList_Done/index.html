@@ -2,66 +2,46 @@
 <html>
 <head lang="uk">
     <meta charset="UTF-8">
-    <title>My Page</title>
-
-    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>JS Buy List</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-2.1.4.min.js"> </script>
+    <script type="text/javascript" src="js/main.js" ></script>
 </head>
 <body>
-
-
-<div class="bl-background">
-    <div class = "container">
-
-        <div class="bl-list">
-            <div class="search">
-                <input class="addForm" type="text" size="75" placeholder=" Назва товару" >
-                <button class = "add" data-tooltip="Додати товар">Додати</button>
-            </div>
-        </div>
-        <div class="one-row-template" style="display: none">
-            <div class="bl-row" >
-                <div class="bl-product"></div>
-                <input class="bl-name">
-                <div class="bl-count">
-                    <button class="bl-minus" data-tooltip="Зменшити кількість">-</button>
-                    <span class="bl-label">1</span>
-                    <button class="bl-plus" data-tooltip="Збільшити кількість">+</button>
-                </div>
-
-                <div class="bl-buttons">
-                    <button class = "bought" data-tooltip="Куплено">Куплено</button>
-                    <button class="unbought" data-tooltip="Не куплено">Не куплено</button>
-                    <button class = "bl-delete" data-tooltip="Прибрати">x</button>
-                </div>
-            </div>
-        </div>
-        <div class="final-template" style="display: none;">
-            <div class="bl-item">
-                <div class="bl-text"></div>
-                <div class="bl-number"></div>
-            </div>
-        </div>
-        <div class="left-template" style="display: none;">
-            <div class="bl-item">
-                <div class="bl-text" style="text-decoration: line-through;"></div>
-                <div class="bl-number"></div>
-            </div>
-        </div>
-        <div class = "bl-bought">
-            <div class="bl-title">Залишилося</div>
-            <div class="bl-left"></div>
-            <div class="bl-title">Куплене</div>
-            <div class="bl-final"></div>
-        </div>
-    </div>
-    <div class="badge">
-        <span class="buy-list">Buy List</span>
-        <span class="created-by">Created by: <span class="name">Doroshevych Oleksandra</span>
-        </span>
-    </div>
-</div>
-<script type="text/javascript" src="jquery-2.1.4.min.js"> </script>
-<script type="text/javascript" src="main.js" ></script>
-
+<div class="BACK">
+    <div class = "CONTAINER">
+        <div class="LIST">
+            <div class="SEARCH">
+                <input class="FORMforADD" type="text" size="75" placeholder=" Назва товару" >
+                <button class = "ADDItem" data-tooltip="Додати товар">Додати</button></div></div>
+        <div class="OneRow" style="display:none">
+            <div class="ROW" >
+                <div class="PRODUCTS"></div>
+                <input class="NAME">
+                <div class="COUNT">
+                    <button class="MINUS" data-tooltip="Зменшити кількість">-</button>
+                    <span class="LABEL">1</span>
+                    <button class="PLUS" data-tooltip="Збільшити кількість">+</button></div>
+                <div class="BUTTONS">
+                    <button class = "CHECKED" data-tooltip="Куплено">Куплено</button>
+                    <button class="NOTCHECKED" data-tooltip="Не куплено">Не куплено</button>
+                    <button class = "DELETE" data-tooltip="Прибрати">x</button></div></div></div>
+        <div class="FINTEM" style="display:none;">
+            <div class="ITEM">
+                <div class="TEXT"></div>
+                <div class="NUMBER"></div></div></div>
+        <div class="LETEM" style="display:none;">
+            <div class="ITEM">
+                <div class="TEXT" style="text-decoration:line-through;"></div>
+                <div class="NUMBER"></div></div></div>
+        <div class = "BOUGHT">
+            <div class="TITLE">Залишилося</div>
+            <div class="LEFT"></div>
+            <div class="TITLE">Куплене</div>
+            <div class="FINAL"></div></div></div>
+    <div class="BADGE">
+        <span class="BUYlist">Buy List</span>
+        <span class="CREATED">Created by: <span class="name">Doroshevych Oleksandra</span>
+        </span></div></div>
 </body>
 </html>
